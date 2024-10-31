@@ -1,0 +1,11 @@
+proyeccion nombrefabricante (FABRICANTE |X| ( proyeccion idtipomadera, idfabricante MUEBLE % proyeccion idtipomadera TIPOMADERA) )
+
+MUEBLE				TIPOMADERA
+f1  t1				t1
+f1  t2				t2
+f1  t3				t3
+f2  t1
+f2  t2
+f3  t1
+
+ 	

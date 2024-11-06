@@ -1,0 +1,801 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='user_behavior_dataset' inline='true' name='federated.0n6c9tg1u60afm163j42l00uswzd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='user_behavior_dataset' name='textscan.0d1rxjn1bndniq1bt989r0xlm6y3'>
+            <connection class='textscan' directory='C:/Users/ruyyg/Downloads/Facu/6- Sexto semestre/Base-de-datos-1/Practica 5' filename='user_behavior_dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0d1rxjn1bndniq1bt989r0xlm6y3' name='NBA_2023_Shots.csv' table='[NBA_2023_Shots#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='es_ES'>
+            <column datatype='integer' name='SEASON_1' ordinal='0' />
+            <column datatype='string' name='SEASON_2' ordinal='1' />
+            <column datatype='integer' name='TEAM_ID' ordinal='2' />
+            <column datatype='string' name='TEAM_NAME' ordinal='3' />
+            <column datatype='integer' name='PLAYER_ID' ordinal='4' />
+            <column datatype='string' name='PLAYER_NAME' ordinal='5' />
+            <column datatype='string' name='POSITION_GROUP' ordinal='6' />
+            <column datatype='string' name='POSITION' ordinal='7' />
+            <column datatype='date' name='GAME_DATE' ordinal='8' />
+            <column datatype='integer' name='GAME_ID' ordinal='9' />
+            <column datatype='string' name='HOME_TEAM' ordinal='10' />
+            <column datatype='string' name='AWAY_TEAM' ordinal='11' />
+            <column datatype='string' name='EVENT_TYPE' ordinal='12' />
+            <column datatype='boolean' name='SHOT_MADE' ordinal='13' />
+            <column datatype='string' name='ACTION_TYPE' ordinal='14' />
+            <column datatype='string' name='SHOT_TYPE' ordinal='15' />
+            <column datatype='string' name='BASIC_ZONE' ordinal='16' />
+            <column datatype='string' name='ZONE_NAME' ordinal='17' />
+            <column datatype='string' name='ZONE_ABB' ordinal='18' />
+            <column datatype='string' name='ZONE_RANGE' ordinal='19' />
+            <column datatype='string' name='LOC_X' ordinal='20' />
+            <column datatype='string' name='LOC_Y' ordinal='21' />
+            <column datatype='integer' name='SHOT_DISTANCE' ordinal='22' />
+            <column datatype='integer' name='QUARTER' ordinal='23' />
+            <column datatype='integer' name='MINS_LEFT' ordinal='24' />
+            <column datatype='integer' name='SECS_LEFT' ordinal='25' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;es&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;es_ES&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEASON_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SEASON_1]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SEASON_1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SEASON_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SEASON_2]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SEASON_2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TEAM_ID]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>TEAM_ID</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TEAM_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TEAM_NAME]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>TEAM_NAME</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLAYER_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PLAYER_ID]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>PLAYER_ID</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PLAYER_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PLAYER_NAME]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>PLAYER_NAME</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POSITION_GROUP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[POSITION_GROUP]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>POSITION_GROUP</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POSITION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[POSITION]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>POSITION</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GAME_DATE</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[GAME_DATE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>GAME_DATE</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GAME_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GAME_ID]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>GAME_ID</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOME_TEAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HOME_TEAM]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>HOME_TEAM</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AWAY_TEAM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AWAY_TEAM]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>AWAY_TEAM</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EVENT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[EVENT_TYPE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>EVENT_TYPE</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHOT_MADE</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[SHOT_MADE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SHOT_MADE</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ACTION_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ACTION_TYPE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>ACTION_TYPE</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHOT_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SHOT_TYPE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SHOT_TYPE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BASIC_ZONE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[BASIC_ZONE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>BASIC_ZONE</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZONE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZONE_NAME]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>ZONE_NAME</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZONE_ABB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZONE_ABB]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>ZONE_ABB</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZONE_RANGE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZONE_RANGE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>ZONE_RANGE</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOC_X</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOC_X]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>LOC_X</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LOC_Y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[LOC_Y]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>LOC_Y</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LES_RES' />
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHOT_DISTANCE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SHOT_DISTANCE]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SHOT_DISTANCE</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>QUARTER</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[QUARTER]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>QUARTER</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MINS_LEFT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MINS_LEFT]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>MINS_LEFT</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECS_LEFT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SECS_LEFT]</local-name>
+            <parent-name>[NBA_2023_Shots.csv]</parent-name>
+            <remote-alias>SECS_LEFT</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Action Type' datatype='string' name='[ACTION_TYPE]' role='dimension' type='nominal' />
+      <column caption='Away Team' datatype='string' name='[AWAY_TEAM]' role='dimension' type='nominal' />
+      <column caption='Basic Zone' datatype='string' name='[BASIC_ZONE]' role='dimension' type='nominal' />
+      <column caption='Event Type' datatype='string' name='[EVENT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Game Date' datatype='date' name='[GAME_DATE]' role='dimension' type='ordinal' />
+      <column caption='Game Id' datatype='integer' name='[GAME_ID]' role='dimension' type='ordinal' />
+      <column caption='Home Team' datatype='string' name='[HOME_TEAM]' role='dimension' type='nominal' />
+      <column caption='Loc X' datatype='string' name='[LOC_X]' role='dimension' type='nominal' />
+      <column caption='Loc Y' datatype='string' name='[LOC_Y]' role='dimension' type='nominal' />
+      <column caption='Mins Left' datatype='integer' name='[MINS_LEFT]' role='measure' type='quantitative' />
+      <column caption='Player Id' datatype='integer' name='[PLAYER_ID]' role='dimension' type='ordinal' />
+      <column caption='Player Name' datatype='string' name='[PLAYER_NAME]' role='dimension' type='nominal' />
+      <column caption='Position' datatype='string' name='[POSITION]' role='dimension' type='nominal' />
+      <column caption='Position Group' datatype='string' name='[POSITION_GROUP]' role='dimension' type='nominal' />
+      <column caption='Quarter' datatype='integer' name='[QUARTER]' role='dimension' type='quantitative' />
+      <column caption='Season 1' datatype='integer' name='[SEASON_1]' role='measure' type='quantitative' />
+      <column caption='Season 2' datatype='string' name='[SEASON_2]' role='dimension' type='nominal' />
+      <column caption='Secs Left' datatype='integer' name='[SECS_LEFT]' role='measure' type='quantitative' />
+      <column caption='Shot Distance' datatype='integer' name='[SHOT_DISTANCE]' role='measure' type='quantitative' />
+      <column caption='Shot Made' datatype='boolean' name='[SHOT_MADE]' role='dimension' type='nominal' />
+      <column caption='Shot Type' datatype='string' name='[SHOT_TYPE]' role='dimension' type='nominal' />
+      <column caption='Team Id' datatype='integer' name='[TEAM_ID]' role='dimension' type='ordinal' />
+      <column caption='Team Name' datatype='string' name='[TEAM_NAME]' role='dimension' type='nominal' />
+      <column caption='Zone Abb' datatype='string' name='[ZONE_ABB]' role='dimension' type='nominal' />
+      <column caption='Zone Name' datatype='string' name='[ZONE_NAME]' role='dimension' type='nominal' />
+      <column caption='Zone Range' datatype='string' name='[ZONE_RANGE]' role='dimension' type='nominal' />
+      <column caption='NBA_2023_Shots.csv' datatype='table' name='[__tableau_internal_object_id__].[NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Argentina&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='NBA_2023_Shots.csv' id='NBA_2023_Shots.csv_1692C286473E49A38CD6E410571FE902'>
+            <properties context=''>
+              <relation connection='textscan.0d1rxjn1bndniq1bt989r0xlm6y3' name='NBA_2023_Shots.csv' table='[NBA_2023_Shots#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='es_ES'>
+                  <column datatype='integer' name='SEASON_1' ordinal='0' />
+                  <column datatype='string' name='SEASON_2' ordinal='1' />
+                  <column datatype='integer' name='TEAM_ID' ordinal='2' />
+                  <column datatype='string' name='TEAM_NAME' ordinal='3' />
+                  <column datatype='integer' name='PLAYER_ID' ordinal='4' />
+                  <column datatype='string' name='PLAYER_NAME' ordinal='5' />
+                  <column datatype='string' name='POSITION_GROUP' ordinal='6' />
+                  <column datatype='string' name='POSITION' ordinal='7' />
+                  <column datatype='date' name='GAME_DATE' ordinal='8' />
+                  <column datatype='integer' name='GAME_ID' ordinal='9' />
+                  <column datatype='string' name='HOME_TEAM' ordinal='10' />
+                  <column datatype='string' name='AWAY_TEAM' ordinal='11' />
+                  <column datatype='string' name='EVENT_TYPE' ordinal='12' />
+                  <column datatype='boolean' name='SHOT_MADE' ordinal='13' />
+                  <column datatype='string' name='ACTION_TYPE' ordinal='14' />
+                  <column datatype='string' name='SHOT_TYPE' ordinal='15' />
+                  <column datatype='string' name='BASIC_ZONE' ordinal='16' />
+                  <column datatype='string' name='ZONE_NAME' ordinal='17' />
+                  <column datatype='string' name='ZONE_ABB' ordinal='18' />
+                  <column datatype='string' name='ZONE_RANGE' ordinal='19' />
+                  <column datatype='string' name='LOC_X' ordinal='20' />
+                  <column datatype='string' name='LOC_Y' ordinal='21' />
+                  <column datatype='integer' name='SHOT_DISTANCE' ordinal='22' />
+                  <column datatype='integer' name='QUARTER' ordinal='23' />
+                  <column datatype='integer' name='MINS_LEFT' ordinal='24' />
+                  <column datatype='integer' name='SECS_LEFT' ordinal='25' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Treemap cantidad de tiros por zona</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='user_behavior_dataset' name='federated.0n6c9tg1u60afm163j42l00uswzd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0n6c9tg1u60afm163j42l00uswzd'>
+            <column caption='Shot Made' datatype='boolean' name='[SHOT_MADE]' role='dimension' type='nominal' />
+            <column caption='Zone Name' datatype='string' name='[ZONE_NAME]' role='dimension' type='nominal' />
+            <column-instance column='[SHOT_MADE]' derivation='Count' name='[cnt:SHOT_MADE:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SHOT_MADE]' derivation='Count' name='[cnt:SHOT_MADE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ZONE_NAME]' derivation='None' name='[none:ZONE_NAME:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0n6c9tg1u60afm163j42l00uswzd].[cnt:SHOT_MADE:qk]' />
+              <color column='[federated.0n6c9tg1u60afm163j42l00uswzd].[cnt:SHOT_MADE:ok]' />
+              <text column='[federated.0n6c9tg1u60afm163j42l00uswzd].[none:ZONE_NAME:nk]' />
+              <text column='[federated.0n6c9tg1u60afm163j42l00uswzd].[cnt:SHOT_MADE:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D0B28994-C79E-46AA-80D0-D84555DFFCF2}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0n6c9tg1u60afm163j42l00uswzd].[cnt:SHOT_MADE:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n6c9tg1u60afm163j42l00uswzd].[cnt:SHOT_MADE:ok]</field>
+            <field>[federated.0n6c9tg1u60afm163j42l00uswzd].[none:F1:nk]</field>
+            <field>[federated.0n6c9tg1u60afm163j42l00uswzd].[none:F2:nk]</field>
+            <field>[federated.0n6c9tg1u60afm163j42l00uswzd].[none:F3:nk]</field>
+            <field>[federated.0n6c9tg1u60afm163j42l00uswzd].[none:ZONE_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9D20AF9B-C4DD-43A7-927E-A8C69751F9A3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Hoja 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAADqklEQVR4nO3az25UdRzG4e+Z/9MCpaSEprYhVaMmLFx4I1wBd8G9eD8udGEMJqImqEkx
+      0pAmrQ5ORzqdHhYsRNuddWbxPs9uzurdfPKbX85p2rZtC0J1Vj0AVkkAROu9+2N68HktTn9Z
+      1RZYun8EsDj9uc5ffbeqLbB0/gIRrffvB23b1hdfH9f23WGdzS9qb3tczw9ndXR8Vh/v36jJ
+      n/PavjuqxaKtrc3BKjbDtbnyBBgOO7Vxs1/fPP2jvvr2pKqqtjb7dfDitJ4dTOvps0nd2egv
+      dSj8Hy6dAE3T1Ad7azWdLerTT27V7va4xqNuTU/Paz5vazzs1kf769XpNKvYC9fqUgBVVVub
+      w9rarLq/8/eztVG3qqp27o2WMgyW4co7wJMfJ7X/3lp9/9OrurHeq6Pj1/XZg9v128tZTabn
+      1e02Neh1atDv1GjYqff31lexHf6zS3eApmlq997bS+7tW/26vzOutn0bxnDQrYMXsxoPuzU/
+      v6gvn5zUr4ezVeyGa3HlCfD8cFa9blNHJ2fVNFWDQaf+en1Ro2GnHnx4s3rdpu5sDOrRw936
+      fTJfxW64Fs27H8NNfnjsRRhRvAgjmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIg
+      mgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgC
+      IJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBo
+      AiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmA
+      aAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJ
+      gGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCi
+      CYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYA
+      ogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgm
+      AKIJgGgCIJoAiCYAogmAaAIgmgCIJgCiCYBoAiCaAIgmAKIJgGgCIJoAiCYAogmAaAIgmgCI
+      JgCiCYBoAiCaAIgmAKIJgGgCIJoAiPYGQJR8nnyjeawAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 2' width='192'>
+      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
+      fKiJD2/+AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Hoja 3' width='192'>
+      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
+      a0nF1ZIAuFD29Gmmvv4NADRvkeD2ETxNqbovd25FrgO4UOCeewjcczf2tf8j0DmObrprr38j
+      mQFcyo5fI/ujz0MhVemuVJQcBLuU0dqJ/6GvwPosfVW1JAAuZu79HJ7uZyrdjYqSALiYpmn4
+      HvwyeuuuSnelYiQALqd5g/gf/yfwNVa6KxUhARAYbbsJPPHPYPoq3ZV1JwEQAJjb7sf/mX+k
+      6pdxWGPu+m3Fgjx3fBrfQ1/FTWeGJADiQ7wHP4/vgS+5ZiaQC2HilqwLL5L/zdfArv3HHhci
+      ARC3Vbpygtwv/xaKmUp3pWwkAGJB9sQFcj//G1R6vVaXW18SALEoJ5cg/+uvYr/7WqW7suYk
+      AGJJlHKw3nqBwvFv1NVxgQRALIs99jb533wNJ9Zf6a6sCQmAWDZlF7F6fkThjX+r+QNkCYBY
+      MSczReG1r1O69CtQ1fYyvqWRAIhVUUrhTF2i+Mf/oDT0KqgaebrM14j3zj+XAIi1oZTCiQ9R
+      PPN9SpdeBrtQ6S7dkhZoxnPwL/De9QW0QJMEQKw9Jz2B1fdLSgMv48QuVb48MnwYW+7Fs/dx
+      zF2PoHlD838lARBlo5TCifVhXXqZ0tBvUckRcNZpvSHTj966a27Q3/EYemjjLT8mARDrQimF
+      mr2OPXqW0vAp7JEzqPQ42Gu02K4ngN60HWPrIcwt96JvOogebF30axIAURHKsVHZKZzZ66jE
+      NZzZaziJKzjpSbCyqGIWihmUMxcQzfCB6UPzhdF8IbTGDvTm7ehN29CbOtEjHWj+yLL7IQEQ
+      VUspBY4FSqGV6Wk1CYBwNXc89SDEbUgAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISr
+      SQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kA
+      hKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISrSQCEq0kAhKtJAISr
+      /T9mkScZbDJPQwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
